@@ -21,21 +21,26 @@
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[0]
         /*
-        var d = document.getElementById('msg')
+        var d = window.document.getElementById('msg')
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
-        */
+        
 
-        /* window.document.write('Está escrito assim: ' + p1.innerHTML) */ 
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
 
-        /* corpo.style.backgroundColor = 'black'
-        p1.style.color = 'blue' */
+        corpo.style.backgroundColor = 'black'
+        p1.style.color = 'blue'
 
-        /* var d= window.document.getElementsByName('msg')[0]
+        var d= window.document.getElementsByName('msg')[0]
         d.innerText = 'Olá' */
 
         var d = window.document.querySelector('div#msg')
         d.style.background = 'blue'
+        d.style.padding = '10px'
+        d.style.border = '2px solid black'
+        d.style.borderRadius = '50px'
+        d.style.boxShadow ='5px 5px 5px black' 
+        
     </script>
 </body>
 </html>
