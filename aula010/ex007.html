@@ -11,8 +11,13 @@
 
         input {
             font: normal 18pt arial;
-            width: 80px;
+            width: 100px;
         }
+
+        input.nun {
+            width: 50px;
+        }
+
         div#res {
             margin-top: 20px;
         }
@@ -20,15 +25,17 @@
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn1" id="txtn1" class="nun">
     <label for="txtn1">N1</label>
-    <input type="number" name="txtn2" id="txtn2">
+    <input type="number" name="txtn2" id="txtn2" class="nun">
     <label for="txtn2">N2</label>
     <input type="submit" value="Somar" onclick="somar()">
     <div id="res">Resultado</div>
     <script>
         
-         document.body.style.background = 'blue'
+        document.body.style.background = 'blue'
+        // document.querySelector('body').style.background = 'blue'
+        //document.querySelector('input').style.border = '2px solid black'
 
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
@@ -37,7 +44,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A Soma de ${n1} + ${n2} é igual a:  ${s}`
+            res.innerHTML = `A Soma de ${n1} + ${n2} é igual a:  <strong>${s}</strong>`
                        
         }
     </script>
