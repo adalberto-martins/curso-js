@@ -11,12 +11,21 @@ text-align: center;
 }
 
 section {
-    background-color: white;
+    background-color:#DBB15E;
     border-radius: 10px;
     padding: 15px;
     margin: auto;
     width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.353);
+}
+
+input.ano {
+    width: 80px;
+    border-radius: 5px;
+}
+
+p.center {
+    text-align: center;
 }
 
 footer {
